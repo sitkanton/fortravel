@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Создание поездки</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 480px;
+      margin: 0 auto;
+      flex: 1;
+      position: relative;
+    }
+.image {
+      max-width: 100%;
+      height: 200px;
+      margin: 0 auto 30px;
+        width: 200px;
+    }
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .text {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #757474;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin-top: 10px;
+    }
+    .text1 {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #757474;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin-top: 10px;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .button {
+      background-color: #339cff;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 16px;
+      margin-top: 40px;
+      width: 100%;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 122, 255, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1e90ff;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #000;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .close-button:hover {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+
+    <div class="header">О <br> приложении</div>
+<img src="icons/logo.png" class="image">
+    <div class="text">Обратная связь</div>
+    <div class="text"> Условия и положения</div>
+    <div class="text"> Политика конфиденциальности</div>
+
+
+
+    <button class="close-button" onclick="window.history.back()">❌</button>
+  </div>
+</body>
+</html>
